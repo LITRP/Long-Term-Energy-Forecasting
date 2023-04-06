@@ -1,0 +1,85 @@
+scenario_name: Chile/Belgium # Name of the scenario
+scenario_description: Chile/Belgium # Description of the scenario
+#DATA FORMAT : DATE, GENERATION, TECNOLOGY
+
+# Archive with the data
+data: data/dataframe_chile_FIXED.csv # Path to the archive from the python main.py or just put the full path
+
+freq: 'D' # Frequency of the data M=Month D=Day 1H= 1Hour 15m=15 minutes
+
+# Columns to use IN YOUR DATABASE PLEASE USE THE SAME NAME OF THE COLUMNS
+date: FECHA # Date of the data
+generation: TOTAL # Generation
+tecnology: TIPO # Tecnology
+
+
+pattern: percentages.csv # Path to the pattern file
+
+
+objetive_date: 31/01/2050 # Date to reach the objetive USE DATE FORMAT DD/MM/YYYY
+
+groupby: Day # Groupby to use in the data
+
+#model: prophet # Model to use
+#growth: logistic # Growth of the model logistic, linear, just for prophet
+target_production: 400000 # Target production for total energy for prophet and logistic growth
+
+plot: True # Plot the results
+
+
+energy: # Energies to predict
+  Predict: # PUT HERE THE NAME OF THE ENERGY YOU WANT TO PREDICT
+    - Solar :
+      - 0.1 # PERCENTAGE OF THE ENERGY TO PREDICT
+      - custom
+      - data:
+          - 2030-02-01
+          - 2040-02-02
+      - values:
+          - 10000
+          - 20000
+    - Eólica :
+      - 0.4
+      - otro # NAME OF THE ENERGY : PERCENTAGE
+      - data:
+          - 2030-02-01
+          - 2040-02-02
+      - values:
+          - 10000
+          - 20000
+    - Hidráulica:
+        - 0.1
+        - otro # NAME OF THE ENERGY : PERCENTAGE
+        - data:
+            - 2030-02-01
+            - 2040-02-02
+        - values:
+            - 10000
+            - 20000
+    - Carbón:
+        - 0.1
+        - otro # NAME OF THE ENERGY : PERCENTAGE
+        - data:
+            - 2030-02-01
+            - 2040-02-02
+        - values:
+            - 10000
+            - 20000
+    - Gas Natural:
+        - 0.1
+        - otro # NAME OF THE ENERGY : PERCENTAGE
+        - data:
+            - 2030-02-01
+            - 2040-02-02
+        - values:
+            - 10000
+            - 20000
+    - Nuclear:
+      - 0.2
+      - linear
+      - data:
+          - 2030-02-01
+          - 2040-02-02
+      - values:
+          - 10000
+          - 20000
