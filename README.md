@@ -12,7 +12,7 @@ LTEF: Long-Term Energy Forecasting
 - See the results in the csv file called Percentage.csv}
 
 
-#Predictor Module
+##Predictor Module
 
 - Run the program with python Predictor.py Chile.yml
 - Wait for the program to finish
