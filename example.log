@@ -5476,3 +5476,793 @@ INFO:root:Thu Apr  6 11:18:06 2023 New timeseries created
 INFO:root:Thu Apr  6 11:18:08 2023 New timeseries created
 INFO:root:Thu Apr  6 11:18:11 2023 New timeseries created
 INFO:root:Thu Apr  6 11:18:13 2023 New timeseries created
+INFO:root:Thu Apr  6 17:42:04 2023 New timeseries created
+INFO:root:Thu Apr  6 17:42:06 2023 New timeseries created
+INFO:root:Thu Apr  6 17:42:09 2023 New timeseries created
+INFO:root:Thu Apr  6 17:42:11 2023 New timeseries created
+INFO:root:Thu Apr  6 17:42:14 2023 New timeseries created
+INFO:root:Thu Apr  6 17:43:19 2023 New timeseries created
+INFO:root:Thu Apr  6 17:43:22 2023 New timeseries created
+INFO:root:Thu Apr  6 17:43:24 2023 New timeseries created
+INFO:root:Thu Apr  6 17:43:26 2023 New timeseries created
+INFO:root:Thu Apr  6 17:43:29 2023 New timeseries created
+INFO:root:Thu Apr  6 17:45:22 2023 New timeseries created
+INFO:root:Thu Apr  6 17:45:25 2023 New timeseries created
+INFO:root:Thu Apr  6 17:45:27 2023 New timeseries created
+INFO:root:Thu Apr  6 17:45:29 2023 New timeseries created
+INFO:root:Thu Apr  6 17:45:32 2023 New timeseries created
+INFO:root:Thu Apr  6 17:45:54 2023 New timeseries created
+INFO:root:Thu Apr  6 17:45:56 2023 New timeseries created
+INFO:root:Thu Apr  6 17:45:58 2023 New timeseries created
+INFO:root:Thu Apr  6 17:46:01 2023 New timeseries created
+INFO:root:Thu Apr  6 17:46:03 2023 New timeseries created
+INFO:root:Fri Apr  7 15:33:36 2023 New timeseries created
+INFO:root:Fri Apr  7 15:33:39 2023 New timeseries created
+INFO:root:Fri Apr  7 15:33:41 2023 New timeseries created
+INFO:root:Fri Apr  7 15:33:43 2023 New timeseries created
+INFO:root:Fri Apr  7 15:33:46 2023 New timeseries created
+INFO:root:Fri Apr  7 15:36:56 2023 New timeseries created
+INFO:root:Fri Apr  7 15:36:59 2023 New timeseries created
+INFO:root:Fri Apr  7 15:37:01 2023 New timeseries created
+INFO:root:Fri Apr  7 15:37:04 2023 New timeseries created
+INFO:root:Fri Apr  7 15:37:06 2023 New timeseries created
+INFO:root:Fri Apr  7 15:40:06 2023 New timeseries created
+INFO:root:Fri Apr  7 15:40:09 2023 New timeseries created
+INFO:root:Fri Apr  7 15:40:11 2023 New timeseries created
+INFO:root:Fri Apr  7 15:40:14 2023 New timeseries created
+INFO:root:Fri Apr  7 15:40:16 2023 New timeseries created
+INFO:root:Fri Apr  7 15:42:45 2023 New timeseries created
+INFO:root:Fri Apr  7 15:42:48 2023 New timeseries created
+INFO:root:Fri Apr  7 15:42:50 2023 New timeseries created
+INFO:root:Fri Apr  7 15:42:52 2023 New timeseries created
+INFO:root:Fri Apr  7 15:42:55 2023 New timeseries created
+INFO:root:Fri Apr  7 15:44:35 2023 New timeseries created
+INFO:root:Fri Apr  7 15:44:38 2023 New timeseries created
+INFO:root:Fri Apr  7 15:44:40 2023 New timeseries created
+INFO:root:Fri Apr  7 15:44:43 2023 New timeseries created
+INFO:root:Fri Apr  7 15:44:45 2023 New timeseries created
+INFO:root:Fri Apr  7 15:45:03 2023 New timeseries created
+INFO:root:Fri Apr  7 15:45:05 2023 New timeseries created
+INFO:root:Fri Apr  7 15:45:08 2023 New timeseries created
+INFO:root:Fri Apr  7 15:45:10 2023 New timeseries created
+INFO:root:Fri Apr  7 15:45:12 2023 New timeseries created
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\dt4hfm70.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\1j3b5qay.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=78160', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\dt4hfm70.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\1j3b5qay.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\prophet_modelyb6vngc9\\prophet_model-20230410155022.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\rii42cat.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\vxdr6sih.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=44331', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\rii42cat.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\vxdr6sih.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\prophet_modele07l_usn\\prophet_model-20230410155028.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\qsps6mf9.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\aexjyxz9.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=31950', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\qsps6mf9.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\aexjyxz9.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\prophet_model0hh09z90\\prophet_model-20230410155032.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\osuh7dmt.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\ca5tqnka.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=57156', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\osuh7dmt.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\ca5tqnka.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\prophet_model56fgmymv\\prophet_model-20230410155036.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\uz19aqez.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpzu9hvvy8\d2jb22i7.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=4676', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\uz19aqez.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\d2jb22i7.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpzu9hvvy8\\prophet_modelxavjvekn\\prophet_model-20230410155041.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\pnsi0sly.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\y1jgpx8i.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=45015', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\pnsi0sly.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\y1jgpx8i.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\prophet_modelf29v6ftk\\prophet_model-20230410155142.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\wdxqg8v8.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\x1fymer0.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=75505', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\wdxqg8v8.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\x1fymer0.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\prophet_modeli90kv__e\\prophet_model-20230410155147.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\wuv8jnd6.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\b5ylpfeq.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=32597', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\wuv8jnd6.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\b5ylpfeq.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\prophet_model6t9pikuc\\prophet_model-20230410155151.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\_5obk4dm.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\tzb9m7qu.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=67753', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\_5obk4dm.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\tzb9m7qu.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\prophet_modeleb4nal1t\\prophet_model-20230410155156.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\4mtaekki.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpyin0194g\lyqgmu8y.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=33084', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\4mtaekki.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\lyqgmu8y.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpyin0194g\\prophet_modely1usoej8\\prophet_model-20230410155200.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\e6ix5cs9.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\94h7wq24.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=68809', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\e6ix5cs9.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\94h7wq24.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\prophet_modelxea7_p0a\\prophet_model-20230410155246.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\iit9f031.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\pt4t77es.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=7840', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\iit9f031.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\pt4t77es.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\prophet_modelj1qn1voq\\prophet_model-20230410155251.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\4hqj0_nf.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\jh85pwrg.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=82127', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\4hqj0_nf.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\jh85pwrg.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\prophet_modeledp7trm_\\prophet_model-20230410155255.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\quaw9ue5.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\rw1wfz77.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=43635', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\quaw9ue5.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\rw1wfz77.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\prophet_model56sq1qwj\\prophet_model-20230410155259.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\jh1pdlrp.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\_lxcgbg5.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=95093', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\jh1pdlrp.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\_lxcgbg5.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\prophet_modeljzcuy17q\\prophet_model-20230410155304.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\fd7gc4i5.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpw4u6y7y7\54t3oteg.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=21110', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\fd7gc4i5.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\54t3oteg.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpw4u6y7y7\\prophet_modelmgpp_uhh\\prophet_model-20230410155308.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\kj3t_sxu.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\82xzfsl5.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=93945', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\kj3t_sxu.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\82xzfsl5.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\prophet_model9exqre9u\\prophet_model-20230410155608.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\ehks3d8b.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\nsbfme3p.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=96360', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\ehks3d8b.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\nsbfme3p.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\prophet_model6bu68iqr\\prophet_model-20230410155613.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\k6_wx89k.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\gv5e09zw.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=1466', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\k6_wx89k.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\gv5e09zw.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\prophet_modely9qyqj4a\\prophet_model-20230410155617.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\s9osdqcn.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\ts4wztbp.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=49127', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\s9osdqcn.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\ts4wztbp.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\prophet_model_gkb5801\\prophet_model-20230410155621.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\2579xgte.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\25_v09aq.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=87832', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\2579xgte.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\25_v09aq.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\prophet_model9r0f0abm\\prophet_model-20230410155625.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\vonuaz9b.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpm6qwxaio\b6_b703s.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=44913', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\vonuaz9b.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\b6_b703s.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpm6qwxaio\\prophet_model7x25v7hl\\prophet_model-20230410155629.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\unu_0w9_.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\twfpw1km.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=26025', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\unu_0w9_.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\twfpw1km.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\prophet_modelqndiou2x\\prophet_model-20230410155828.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\dkv7e127.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\p5rxw4c6.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=80636', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\dkv7e127.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\p5rxw4c6.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\prophet_modelsd8_zyb1\\prophet_model-20230410155834.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\_ax6ica4.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\7a7i96ig.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=91193', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\_ax6ica4.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\7a7i96ig.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\prophet_model7x1xyhi9\\prophet_model-20230410155838.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\xc5dw0kr.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\p26z40dw.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=64139', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\xc5dw0kr.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\p26z40dw.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\prophet_model8senoo1g\\prophet_model-20230410155843.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\fayvpu69.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\oryqg5n6.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=50228', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\fayvpu69.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\oryqg5n6.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\prophet_modell4602uij\\prophet_model-20230410155847.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\fbq9qg42.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpocgay23p\pb1lisbj.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=91246', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\fbq9qg42.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\pb1lisbj.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpocgay23p\\prophet_modeldn_zx5uo\\prophet_model-20230410155851.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\odqienpu.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\5q5kp11e.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=49164', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\odqienpu.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\5q5kp11e.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\prophet_modelniliq1y8\\prophet_model-20230410155954.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\24jm4x8a.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\i1yd9iv6.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=45583', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\24jm4x8a.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\i1yd9iv6.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\prophet_modeldea3lr7z\\prophet_model-20230410155958.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\0pt6y927.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\lkcachkm.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=42841', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\0pt6y927.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\lkcachkm.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\prophet_modelw8rqphdy\\prophet_model-20230410160002.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\lun9qq5_.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\z2qba9xa.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=97783', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\lun9qq5_.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\z2qba9xa.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\prophet_modelhfi0wfb_\\prophet_model-20230410160007.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\w7ef31nf.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\vtt5hssw.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=26487', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\w7ef31nf.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\vtt5hssw.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\prophet_modelm0d12d4g\\prophet_model-20230410160011.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\khlidksw.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpwe_k1ct2\f9zl2heq.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=56825', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\khlidksw.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\f9zl2heq.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpwe_k1ct2\\prophet_modelbao4sz8r\\prophet_model-20230410160015.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\qs6f3pla.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\za9ubrq4.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=58878', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\qs6f3pla.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\za9ubrq4.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\prophet_model5gfk168m\\prophet_model-20230410160126.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\dsc1nmsz.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\qkxitzip.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=86535', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\dsc1nmsz.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\qkxitzip.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\prophet_model9qvyev0e\\prophet_model-20230410160130.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\bm2680kd.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\uctr9u5c.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=52382', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\bm2680kd.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\uctr9u5c.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\prophet_modelb5x27bi0\\prophet_model-20230410160134.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\o0u3u69p.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\484javkv.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=81463', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\o0u3u69p.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\484javkv.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\prophet_model__tvwrbb\\prophet_model-20230410160139.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\w3q5j3ji.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\efssq3sp.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=82582', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\w3q5j3ji.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\efssq3sp.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\prophet_modelqz61_by5\\prophet_model-20230410160143.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\k2ts0xsz.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmp5uuwm2m5\lj30m9mp.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=5971', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\k2ts0xsz.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\lj30m9mp.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmp5uuwm2m5\\prophet_modelxcqwkb3e\\prophet_model-20230410160147.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+INFO:root:Mon Apr 10 16:26:37 2023 New timeseries created
+INFO:root:Mon Apr 10 16:26:45 2023 New timeseries created
+INFO:root:Mon Apr 10 16:26:52 2023 New timeseries created
+INFO:root:Mon Apr 10 16:26:58 2023 New timeseries created
+INFO:root:Mon Apr 10 16:27:04 2023 New timeseries created
+INFO:root:Mon Apr 10 16:27:51 2023 New timeseries created
+INFO:root:Mon Apr 10 16:27:57 2023 New timeseries created
+INFO:root:Mon Apr 10 16:28:03 2023 New timeseries created
+INFO:root:Mon Apr 10 16:28:09 2023 New timeseries created
+INFO:root:Mon Apr 10 16:28:15 2023 New timeseries created
+INFO:root:Mon Apr 10 16:29:15 2023 New timeseries created
+INFO:root:Mon Apr 10 16:29:22 2023 New timeseries created
+INFO:root:Mon Apr 10 16:29:28 2023 New timeseries created
+INFO:root:Mon Apr 10 16:29:34 2023 New timeseries created
+INFO:root:Mon Apr 10 16:29:40 2023 New timeseries created
+INFO:root:Mon Apr 10 16:31:37 2023 New timeseries created
+INFO:root:Mon Apr 10 16:31:44 2023 New timeseries created
+INFO:root:Mon Apr 10 16:31:50 2023 New timeseries created
+INFO:root:Mon Apr 10 16:31:55 2023 New timeseries created
+INFO:root:Mon Apr 10 16:32:01 2023 New timeseries created
+INFO:root:Mon Apr 10 16:35:25 2023 New timeseries created
+INFO:root:Mon Apr 10 16:35:32 2023 New timeseries created
+INFO:root:Mon Apr 10 16:35:39 2023 New timeseries created
+INFO:root:Mon Apr 10 16:35:46 2023 New timeseries created
+INFO:root:Mon Apr 10 16:35:52 2023 New timeseries created
+INFO:root:Mon Apr 10 16:36:32 2023 New timeseries created
+INFO:root:Mon Apr 10 16:36:39 2023 New timeseries created
+INFO:root:Mon Apr 10 16:36:45 2023 New timeseries created
+INFO:root:Mon Apr 10 16:36:51 2023 New timeseries created
+INFO:root:Mon Apr 10 16:36:57 2023 New timeseries created
+INFO:root:Mon Apr 10 16:39:59 2023 New timeseries created
+INFO:root:Mon Apr 10 16:40:05 2023 New timeseries created
+INFO:root:Mon Apr 10 16:40:11 2023 New timeseries created
+INFO:root:Mon Apr 10 16:40:17 2023 New timeseries created
+INFO:root:Mon Apr 10 16:40:23 2023 New timeseries created
+INFO:root:Mon Apr 10 16:49:26 2023 New timeseries created
+INFO:root:Mon Apr 10 16:49:33 2023 New timeseries created
+INFO:root:Mon Apr 10 16:49:39 2023 New timeseries created
+INFO:root:Mon Apr 10 16:49:45 2023 New timeseries created
+INFO:root:Mon Apr 10 16:49:51 2023 New timeseries created
+INFO:root:Mon Apr 10 16:51:05 2023 New timeseries created
+INFO:root:Mon Apr 10 16:51:11 2023 New timeseries created
+INFO:root:Mon Apr 10 16:51:17 2023 New timeseries created
+INFO:root:Mon Apr 10 16:51:23 2023 New timeseries created
+INFO:root:Mon Apr 10 16:51:28 2023 New timeseries created
+INFO:root:Mon Apr 10 16:52:06 2023 New timeseries created
+INFO:root:Mon Apr 10 16:52:13 2023 New timeseries created
+INFO:root:Mon Apr 10 16:52:20 2023 New timeseries created
+INFO:root:Mon Apr 10 16:52:26 2023 New timeseries created
+INFO:root:Mon Apr 10 16:52:31 2023 New timeseries created
+INFO:root:Mon Apr 10 16:53:48 2023 New timeseries created
+INFO:root:Mon Apr 10 16:53:54 2023 New timeseries created
+INFO:root:Mon Apr 10 16:54:00 2023 New timeseries created
+INFO:root:Mon Apr 10 16:54:06 2023 New timeseries created
+INFO:root:Mon Apr 10 16:54:11 2023 New timeseries created
+INFO:root:Mon Apr 10 16:56:19 2023 New timeseries created
+INFO:root:Mon Apr 10 16:56:25 2023 New timeseries created
+INFO:root:Mon Apr 10 16:56:31 2023 New timeseries created
+INFO:root:Mon Apr 10 16:56:37 2023 New timeseries created
+INFO:root:Mon Apr 10 16:56:43 2023 New timeseries created
+INFO:root:Mon Apr 10 16:57:42 2023 New timeseries created
+INFO:root:Mon Apr 10 16:57:49 2023 New timeseries created
+INFO:root:Mon Apr 10 16:57:55 2023 New timeseries created
+INFO:root:Mon Apr 10 16:58:01 2023 New timeseries created
+INFO:root:Mon Apr 10 16:58:06 2023 New timeseries created
+INFO:root:Mon Apr 10 16:58:56 2023 New timeseries created
+INFO:root:Mon Apr 10 16:59:02 2023 New timeseries created
+INFO:root:Mon Apr 10 16:59:08 2023 New timeseries created
+INFO:root:Mon Apr 10 16:59:15 2023 New timeseries created
+INFO:root:Mon Apr 10 16:59:20 2023 New timeseries created
+INFO:root:Mon Apr 10 17:00:09 2023 New timeseries created
+INFO:root:Mon Apr 10 17:00:15 2023 New timeseries created
+INFO:root:Mon Apr 10 17:00:22 2023 New timeseries created
+INFO:root:Mon Apr 10 17:00:28 2023 New timeseries created
+INFO:root:Mon Apr 10 17:00:33 2023 New timeseries created
+INFO:root:Mon Apr 10 17:01:18 2023 New timeseries created
+INFO:root:Mon Apr 10 17:01:24 2023 New timeseries created
+INFO:root:Mon Apr 10 17:01:30 2023 New timeseries created
+INFO:root:Mon Apr 10 17:01:36 2023 New timeseries created
+INFO:root:Mon Apr 10 17:01:42 2023 New timeseries created
+INFO:root:Mon Apr 10 17:02:39 2023 New timeseries created
+INFO:root:Mon Apr 10 17:02:46 2023 New timeseries created
+INFO:root:Mon Apr 10 17:02:51 2023 New timeseries created
+INFO:root:Mon Apr 10 17:02:57 2023 New timeseries created
+INFO:root:Mon Apr 10 17:03:03 2023 New timeseries created
+INFO:root:Mon Apr 10 17:35:26 2023 New timeseries created
+INFO:root:Mon Apr 10 17:35:33 2023 New timeseries created
+INFO:root:Mon Apr 10 17:35:39 2023 New timeseries created
+INFO:root:Mon Apr 10 17:35:46 2023 New timeseries created
+INFO:root:Mon Apr 10 17:35:52 2023 New timeseries created
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpaz8ffzyv\bvbfp_ik.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpaz8ffzyv\j1h4bbx5.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=94747', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpaz8ffzyv\\bvbfp_ik.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpaz8ffzyv\\j1h4bbx5.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpaz8ffzyv\\prophet_modelixqd8q5y\\prophet_model-20230410173601.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+INFO:root:Mon Apr 10 17:38:21 2023 New timeseries created
+INFO:root:Mon Apr 10 17:38:27 2023 New timeseries created
+INFO:root:Mon Apr 10 17:38:34 2023 New timeseries created
+INFO:root:Mon Apr 10 17:38:40 2023 New timeseries created
+INFO:root:Mon Apr 10 17:38:46 2023 New timeseries created
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpnow_gjam\wldq2i_e.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpnow_gjam\bm6mosft.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=44111', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpnow_gjam\\wldq2i_e.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpnow_gjam\\bm6mosft.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpnow_gjam\\prophet_model2af_pvov\\prophet_model-20230410173853.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+INFO:root:Mon Apr 10 17:42:29 2023 New timeseries created
+INFO:root:Mon Apr 10 17:42:36 2023 New timeseries created
+INFO:root:Mon Apr 10 17:42:42 2023 New timeseries created
+INFO:root:Mon Apr 10 17:42:48 2023 New timeseries created
+INFO:root:Mon Apr 10 17:42:53 2023 New timeseries created
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpqyqtz32w\oajbk2ir.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpqyqtz32w\qx87ps0b.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=32070', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpqyqtz32w\\oajbk2ir.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpqyqtz32w\\qx87ps0b.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpqyqtz32w\\prophet_modeltc8qk254\\prophet_model-20230410174300.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+INFO:root:Mon Apr 10 18:45:10 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:12 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:15 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:17 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:19 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:48 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:50 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:53 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:55 2023 New timeseries created
+INFO:root:Mon Apr 10 18:45:57 2023 New timeseries created
+INFO:root:Mon Apr 10 18:50:17 2023 New timeseries created
+INFO:root:Mon Apr 10 18:50:20 2023 New timeseries created
+INFO:root:Mon Apr 10 18:50:22 2023 New timeseries created
+INFO:root:Mon Apr 10 18:50:24 2023 New timeseries created
+INFO:root:Mon Apr 10 18:50:26 2023 New timeseries created
+INFO:root:Mon Apr 10 18:51:46 2023 New timeseries created
+INFO:root:Mon Apr 10 18:51:49 2023 New timeseries created
+INFO:root:Mon Apr 10 18:51:51 2023 New timeseries created
+INFO:root:Mon Apr 10 18:51:54 2023 New timeseries created
+INFO:root:Mon Apr 10 18:51:56 2023 New timeseries created
+INFO:root:Mon Apr 10 18:54:06 2023 New timeseries created
+INFO:root:Mon Apr 10 18:54:09 2023 New timeseries created
+INFO:root:Mon Apr 10 18:54:11 2023 New timeseries created
+INFO:root:Mon Apr 10 18:54:13 2023 New timeseries created
+INFO:root:Mon Apr 10 18:54:15 2023 New timeseries created
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\e94uk9gg.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\mpmsml73.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=84435', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\e94uk9gg.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\mpmsml73.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\prophet_modelghi3ntu4\\prophet_model-20230410204947.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\ug_1bw9e.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\ngo0zcam.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=84895', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\ug_1bw9e.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\ngo0zcam.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\prophet_modelswq3dim4\\prophet_model-20230410204949.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\tvu2gwix.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\ix6kr5xs.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=7448', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\tvu2gwix.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\ix6kr5xs.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\prophet_model2ih5mv5m\\prophet_model-20230410204951.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\8nm6n572.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\tftoyyxv.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=17957', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\8nm6n572.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\tftoyyxv.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\prophet_modelxs_2jgyq\\prophet_model-20230410204953.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\qqaa85gh.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\ts08p3oq.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=46570', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\qqaa85gh.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\ts08p3oq.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\prophet_modela23kztux\\prophet_model-20230410204954.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\aph68929.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpir2bkuzb\kwnojjzr.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=44566', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\aph68929.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\kwnojjzr.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpir2bkuzb\\prophet_modela_v01_yd\\prophet_model-20230410204956.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+INFO:root:Mon Apr 10 20:52:40 2023 New timeseries created
+INFO:root:Mon Apr 10 20:52:43 2023 New timeseries created
+INFO:root:Mon Apr 10 20:52:45 2023 New timeseries created
+INFO:root:Mon Apr 10 20:52:48 2023 New timeseries created
+INFO:root:Mon Apr 10 20:52:50 2023 New timeseries created
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:Adding TBB (C:\Users\jsoto\anaconda3\envs\MPTE\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\5engdo1a.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\ymn3uj9b.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=6366', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\5engdo1a.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\ymn3uj9b.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\prophet_modelqjxj0edq\\prophet_model-20230410223543.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\tqth7x_1.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\_ensj1xv.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=33080', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\tqth7x_1.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\_ensj1xv.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\prophet_model4eg7k0xc\\prophet_model-20230410223545.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\ahup6sqc.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\odsmwo_j.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=35746', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\ahup6sqc.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\odsmwo_j.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\prophet_model0cn9xpgu\\prophet_model-20230410223547.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\t8k4181x.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\3ks9j7z9.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=62123', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\t8k4181x.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\3ks9j7z9.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\prophet_modelhsxvawub\\prophet_model-20230410223549.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\8f_5unx4.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\5_ad4oho.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=97516', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\8f_5unx4.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\5_ad4oho.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\prophet_modelnb7q2n1x\\prophet_model-20230410223550.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+DEBUG:cmdstanpy:cmd: where.exe tbb.dll
+cwd: None
+DEBUG:cmdstanpy:TBB already found in load path
+INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\xl8qgggn.json
+DEBUG:cmdstanpy:input tempfile: C:\Users\jsoto\AppData\Local\Temp\tmpdatdk73g\dpft6fqr.json
+DEBUG:cmdstanpy:idx 0
+DEBUG:cmdstanpy:running CmdStan, num_threads: None
+DEBUG:cmdstanpy:CmdStan args: ['C:\\Users\\jsoto\\anaconda3\\envs\\MPTE\\Lib\\site-packages\\prophet\\stan_model\\prophet_model.bin', 'random', 'seed=78088', 'data', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\xl8qgggn.json', 'init=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\dpft6fqr.json', 'output', 'file=C:\\Users\\jsoto\\AppData\\Local\\Temp\\tmpdatdk73g\\prophet_model5qaere63\\prophet_model-20230410223552.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+INFO:cmdstanpy:Chain [1] start processing
+INFO:cmdstanpy:Chain [1] done processing
+INFO:root:Mon Apr 10 22:38:02 2023 New timeseries created
+INFO:root:Mon Apr 10 22:38:05 2023 New timeseries created
+INFO:root:Mon Apr 10 22:38:07 2023 New timeseries created
+INFO:root:Mon Apr 10 22:38:09 2023 New timeseries created
+INFO:root:Mon Apr 10 22:38:12 2023 New timeseries created

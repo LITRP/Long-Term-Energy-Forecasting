@@ -16,6 +16,7 @@ import math_
 import matplotlib.pyplot as plt
 import logging
 import yaml
+import prophet
 from yaml.loader import SafeLoader
 
 import os
@@ -97,6 +98,16 @@ def save_excel(df,name,writer): #SAVE TIMESERIES TO EXCEL
         #print(e)
         logging.error(f"{time.ctime(int(time.time()))} Error saving file in {name}")
 
+
+def prophet_model_predict(df,fechas): #PROPHET MODEL
+    model = prophet.Prophet()
+    model.fit(df)
+    period = len(fechas) - len(df)
+    future = model.make_future_dataframe(periods=period, freq="D")
+    forecast = model.predict(future)
+    forecast = forecast[["ds", "yhat"]]
+    forecast = forecast.rename(columns={"ds": "ds", "yhat": "y"})
+    return forecast
 def Total_timeseries(df3): #MAKE TOTAL TIMESERIES:
     df3 = df3.groupby(by=["Date"])["Generacion_MWh"].sum().reset_index()
     df3 = df3[["Date", "Generacion_MWh"]]
@@ -192,13 +203,18 @@ def Javier_Regression(full_df,df,percentage,energy,df_percentage,type): #JAVIER 
         print("Cerrando programa")
         exit()
     else:
-        names = pd.read_csv(f"Percentages.csv")
-    fechas = pd.date_range(start=df["ds"].max().replace(tzinfo=None), end=data_yml["objetive_date"], freq=data_yml["freq"])
-    pen, b = math_.ecuación_de_la_recta(len(df), df["y"].iloc[-1], len(df)+len(fechas), data_yml["target_production"]*percentage)
+        names = pd.read_csv(f"output/Percentages.csv")
+    if type =="Demand":
+        fechas = pd.date_range(start=full_df["ds"].max().replace(tzinfo=None), end=data_yml["objetive_date"], freq=data_yml["freq"])
+        pen, b = math_.ecuación_de_la_recta(len(full_df), df["y"][df["ds"] == full_df["ds"].max().replace(tzinfo=None)].iloc[0], len(df) + len(fechas),
+                                        data_yml["target_production"] * percentage)
+    else:
+        fechas = pd.date_range(start=df["ds"].max().replace(tzinfo=None), end=data_yml["objetive_date"], freq=data_yml["freq"])
+        pen, b = math_.ecuación_de_la_recta(len(df), df["y"].iloc[-1], len(df)+len(fechas), data_yml["target_production"]*percentage)
     lista = []
     offset = len(df)
     x = np.arange(offset, offset+len(fechas), 1)
-    if type == "linear":
+    if type == "linear" or type == "Demand":
         result = math_.calcular_puntos_de_la_recta(pen, b, len(df), x)
         lista.extend(result)
     else:#x, a, b, c
@@ -234,14 +250,18 @@ def Javier_Regression(full_df,df,percentage,energy,df_percentage,type): #JAVIER 
         df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] + (
                     df2["y"][
                         (df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] *
-                    names.loc[x][f"{energy}_per"])
+                    names.loc[x][f"{energy}_per"] - names.loc[x][f"Demand_per"])
     percentage_diff = diff_percentage(df2["y"].iloc[-1], data_yml["target_production"]*percentage)
+    if percentage != 0.0:
+        df2["y"] = df2["y"] + (df2["y"] * (percentage_diff / 100))
+    else:
+        df2["y"].iloc[-1] = 0
     #df2["y"] = df2["y"] +  (df2["y"] * (percentage_diff / 100))
     return df2,df_percentage
 
 
 def file_exists(): #CHECK IF FILE EXISTS
-    if os.path.isfile(data_yml["pattern"]):
+    if os.path.isfile(f'output/{data_yml["pattern"]}'):
         return True
     else:
         print("File does not exist")
@@ -251,7 +271,7 @@ def diff_percentage(last_value,total): #DIFFERENCE PERCENTAGE
     return ((total-last_value)/last_value)*100
 
 
-def regression_nuclear(df,percentage): #NUCLEAR REGRESSION
+def regression_nuclear(df,percentage,energy): #NUCLEAR REGRESSION
     df[data_yml["date"]] = pd.to_datetime(df[data_yml["date"]],utc=True)
     fechas = pd.date_range(start=df[data_yml["date"]].max().replace(tzinfo=None), end=data_yml["objetive_date"], freq=data_yml["freq"])
     pen, b = math_.ecuación_de_la_recta(len(df), 0, len(df)+len(fechas), data_yml["target_production"]*percentage)
@@ -261,7 +281,32 @@ def regression_nuclear(df,percentage): #NUCLEAR REGRESSION
     result = math_.calcular_puntos_de_la_recta(pen, b, len(df), x)
     lista.extend(result)
     df2 = pd.DataFrame({"ds": fechas, "y": lista})
-    return df2
+
+    def pendiente(x1, x2, y1, y2):
+        return ((y2 - y1) / (x2 - x1))
+
+    def indep(x1, y1, m):
+        return (y1 - (m * x1))
+
+    def puntos(m, x, b):
+        return ((m * x) + b)
+
+    date_list, values_list = get_centrals(energy)
+    index = []
+    pivot = fechas.tolist()
+    for d in date_list:
+        if d in pivot:
+            index.append(get_index(pivot, d))
+
+    b = indep(0, 0, 0)
+    listo_y = list(map(lambda x: puntos(0, x, b), range(0, len(fechas))))
+    filtro = list(filter(lambda x: x in index, range(0, len(fechas))))
+    for x in filtro:
+        pen = 0
+        b = indep(x, puntos(pen, x, b) + values_list[index.index(x)], pen)
+        listo_y[x:] = list(map(lambda y: puntos(pen, y, b), range(x, len(fechas))))
+    lista = listo_y
+    return df2,lista
 
 def main():
     import time
@@ -294,7 +339,7 @@ def main():
         energys2 = (list(map(lambda x: x[0], energys)))  # CAN BE BETTER PLEASE CHANGE
         for renowable in energys2:
             if renowable == "Nuclear":
-                result = regression_nuclear(df, float(total_dic[renowable][0]))
+                result,nuclear_pivot = regression_nuclear(df, float(total_dic[renowable][0]),renowable)
                 total_dic[renowable] = result["y"]
             else:
                 df_renew = df[df[data_yml["tecnology"]] == renowable] # CONVERTIR EN FUNCION
@@ -308,11 +353,18 @@ def main():
                 Serie.data["ds"] = df2[data_yml["date"]]
                 result,percentages_df = Javier_Regression(df,Serie.convert_to_dataframe(), (float(total_dic[renowable][0])), renowable,percentage_df,get_type(renowable))
                 total_dic[renowable] = result["y"]
+        df_demand = pd.read_csv("data/Datos_demanda.csv", parse_dates=["fecha"])
+        df_demand = df_demand.rename(columns={"fecha": "ds", "demanda": "y"})
+        demand,void = Javier_Regression(Serie.convert_to_dataframe(),df_demand, 1, "Demand",percentage_df,"Demand")
+
     if not file_exists():
         percentage_df = pd.DataFrame(percentages_df)
         percentage_df.to_csv("Percentages.csv")
 
-    with pd.ExcelWriter('Forecast2.xlsx') as writer: #SAVE TO EXCEL
+    if not os.path.exists("output"):
+        os.makedirs("output")
+
+    with pd.ExcelWriter('output/Forecast.xlsx') as writer: #SAVE TO EXCEL
         saving = pd.DataFrame(total_dic)
         #saving["Nuclear2"] = final_result
         if data_yml["groupby"] == "Day":
@@ -323,7 +375,11 @@ def main():
         if data_yml["groupby"] == "Year":
             saving["date"] = result["ds"]
             saving = saving.groupby(saving["date"].dt.year).sum()
+        pivot = saving["Nuclear"]
+        saving["Nuclear"] = nuclear_pivot
         saving["Total"] = saving.sum(axis=1)
+        saving["Nuclear_Centrals_trend"] = pivot
+        saving["Demand"] = list(demand["y"])
         saving.to_excel(writer, sheet_name='Forecast')
     end_time = time.time()
     print("Time: ", end_time - start_time)

@@ -7,7 +7,7 @@ from prophet import Prophet
 from prophet.plot import seasonality_plot_df
 from yaml import SafeLoader
 
-from MPTE import file_exists, create_df
+from Predictor import file_exists, create_df
 import pandas as pd
 import yaml
 
@@ -27,7 +27,7 @@ def Decomposition(m,name,energy): #DECOMPOSITION OF SEASONALITY
     # name = name of the seasonality component you want (yearly,monthly,etc...)
     # m = the model object
     # will return three arrays: days, months, and the seasonality component
-    start = pd.to_datetime('2019-01-01 0000')
+    start = pd.to_datetime('2022-01-01 0000')
     period = m.seasonalities[name]['period']
     end = start + pd.Timedelta(days=period)
     plot_points = 366
@@ -62,7 +62,9 @@ def fill_df_percentage(df,df_percentage):#FILL PERCENTAGE DATAFRAME
     if not file_exists():#CHECK IF FILE EXISTS
         energys = (list(map(lambda x: list(x.keys()), data_yml["energy"]["Predict"])))
         energys2 = (list(map(lambda x: x[0], energys)))  # CAN BE BETTER PLEASE CHANGE
-        writer = pd.ExcelWriter('Data_Original.xlsx', engine='xlsxwriter')
+        if not os.path.exists("output"):
+            os.mkdir("output")
+        writer = pd.ExcelWriter('output/Data_Original.xlsx', engine='xlsxwriter')
         for energy in energys2:
             if energy != "Nuclear":
                 df2 = df[df[data_yml["tecnology"]] == energy]
@@ -72,7 +74,32 @@ def fill_df_percentage(df,df_percentage):#FILL PERCENTAGE DATAFRAME
                 df2.to_excel(writer,sheet_name=energy)
                 df_percentage = create_percentage_df(df2,energy,df_percentage)
         writer.save()
-        df_percentage.to_csv("Percentages.csv", index=False)
+        df3 = pd.read_csv("data/Datos_demanda.csv")
+        df3 = df3.rename(columns={"fecha": "ds", "demanda": "y"})
+        df_percentage = pd.concat([df_percentage,create_demand_percentage(df3)],axis=1)
+        if not os.path.exists("output"):
+            os.mkdir("output")
+        df_percentage.to_csv("output/Percentages.csv", index=False)
+
+def create_demand_percentage(df):
+   # df["ds"] = df["ds"].dt.tz_localize(None)
+    m = Prophet(seasonality_mode='multiplicative')
+    m.fit(df)
+    future = m.make_future_dataframe(periods=365)
+    forecast = m.predict(future)
+    c, a, b = Decomposition(m, "yearly", "Demand")  #
+    df_percentage = {}
+    #df_percentage["month"] = a
+    #df_percentage["day"] = c
+    df_percentage["Demand_per"] = b
+    names = pd.DataFrame(df_percentage)
+    if data_yml["plot"] == True:
+        if not os.path.exists("Demand"):#CREATE FOLDER
+            os.mkdir("Demand")#CREATE FOLDER
+        m.plot(forecast).savefig(f'Demand\Demand_Figure.png')  # plot model
+        m.plot_components(forecast).savefig(f"Demand\Demand_components.png")  # plot model components
+
+    return names
 
 if __name__ == '__main__':
     with open(sys.argv[1], "r",encoding="utf-8") as ymlfile:
