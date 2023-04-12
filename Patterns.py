@@ -73,15 +73,15 @@ def fill_df_percentage(df,df_percentage):#FILL PERCENTAGE DATAFRAME
                 df2["ds"] = df2["ds"].dt.tz_localize(None)
                 df2.to_excel(writer,sheet_name=energy)
                 df_percentage = create_percentage_df(df2,energy,df_percentage)
-        writer.save()
         df3 = pd.read_csv("data/Datos_demanda.csv")
         df3 = df3.rename(columns={"fecha": "ds", "demanda": "y"})
-        df_percentage = pd.concat([df_percentage,create_demand_percentage(df3)],axis=1)
+        df_percentage = pd.concat([df_percentage,create_demand_percentage(df3,writer)],axis=1)
         if not os.path.exists("output"):
             os.mkdir("output")
+        writer.save()
         df_percentage.to_csv("output/Percentages.csv", index=False)
 
-def create_demand_percentage(df):
+def create_demand_percentage(df,writer):
    # df["ds"] = df["ds"].dt.tz_localize(None)
     m = Prophet(seasonality_mode='multiplicative')
     m.fit(df)
@@ -93,6 +93,10 @@ def create_demand_percentage(df):
     #df_percentage["day"] = c
     df_percentage["Demand_per"] = b
     names = pd.DataFrame(df_percentage)
+
+
+    df.to_excel(writer, sheet_name="Demand")
+
     if data_yml["plot"] == True:
         if not os.path.exists("Demand"):#CREATE FOLDER
             os.mkdir("Demand")#CREATE FOLDER

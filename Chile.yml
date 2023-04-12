@@ -12,6 +12,7 @@ groupby: Day # Groupby to use in the data
 date: FECHA # Date of the data
 generation: TOTAL # Generation
 tecnology: TIPO # Tecnology
+zones: REGIÓN # Zones
 
 
 pattern: percentages.csv # Path to the pattern file
@@ -25,6 +26,28 @@ objetive_date: 31/01/2050 # Date to reach the objetive USE DATE FORMAT DD/MM/YYY
 target_production: 400000 # Target production for total energy for prophet and logistic growth
 
 plot: True # Plot the results
+make_macrozone: True # Make the macrozone
+merge_csv: True # Merge the csv files
+
+macrozones:
+  Norte:
+    - Arica y Parinacota
+    - Región de Tarapacá
+    - Región de Antofagasta
+    - Región de Atacama
+  Centro:
+    - Región de Coquimbo
+    - Región de Valparaíso
+    - Región Metropolitana
+    - Región de O'Higgins
+    - Región del Maule
+    - Región de Ñuble
+  Sur:
+    - Región del Bío-Bío
+    - Región de los Ríos
+    - Región de los Lagos
+    - Región de la Araucanía
+
 
 
 energy: # Energies to predict
