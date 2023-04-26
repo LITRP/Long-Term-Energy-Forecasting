@@ -23,14 +23,22 @@ except: #IF NO FILE IS PASSED AS ARGUMENT
     print("Error loading config file")
     exit()
 
-def Decomposition(m,name,energy): #DECOMPOSITION OF SEASONALITY
+def Decomposition(m,energy): #DECOMPOSITION OF SEASONALITY
     # name = name of the seasonality component you want (yearly,monthly,etc...)
     # m = the model object
     # will return three arrays: days, months, and the seasonality component
     start = pd.to_datetime('2022-01-01 0000')
+    for name in m.seasonalities:
+        print(name)
     period = m.seasonalities[name]['period']
-    end = start + pd.Timedelta(days=period)
-    plot_points = 366
+    print(period)
+    end = start + pd.Timedelta(days=365)
+    if name == 'yearly':
+        plot_points = 365
+    elif name == 'daily':
+        plot_points = 365 * 24
+    else:
+        plot_points = 365
     days = pd.to_datetime(np.linspace(start.value, end.value, plot_points))
     df_y = seasonality_plot_df(m, days)
     seas = m.predict_seasonal_components(df_y)
@@ -38,18 +46,24 @@ def Decomposition(m,name,energy): #DECOMPOSITION OF SEASONALITY
     save_dict["per"] = seas[name].values[:-1]
     save_dict['day'] = df_y['ds'].dt.day[:-1]
     save_dict['month'] = df_y['ds'].dt.month[:-1]
-    df = pd.DataFrame(save_dict)
-    return(save_dict['day'],save_dict['month'],save_dict["per"])
+    if name == 'daily':
+        save_dict['time'] = df_y['ds'].dt.hour[:-1]
+        return (save_dict['day'], save_dict['month'], save_dict["per"], save_dict['time'])
+    else:
+        return(save_dict['day'],save_dict['month'],save_dict["per"],0)
 
 def create_percentage_df(df,energy,df_percentage): #CREATE PERCENTAGE DATAFRAME
     m = Prophet(seasonality_mode='multiplicative')
-    df["ds"] = df["ds"].dt.tz_localize(None)#
+    df["ds"] = df["ds"]
     m.fit(df)
-    future = m.make_future_dataframe(periods=365)
+    future = m.make_future_dataframe(periods=365*24)
     forecast = m.predict(future)
-    c, a, b = Decomposition(m, "yearly", energy)  #
+    print(forecast)
+    c, a, b,d = Decomposition(m, energy)  #
     df_percentage["month"] = a
     df_percentage["day"] = c
+    if type(d) != int:
+        df_percentage["time"] = d
     df_percentage[f"{energy}_per"] = b
     names = pd.DataFrame(df_percentage)
     if data_yml["plot"] == True:
@@ -67,11 +81,11 @@ def fill_df_percentage(df,df_percentage):#FILL PERCENTAGE DATAFRAME
         writer = pd.ExcelWriter('output/Data_Original.xlsx', engine='xlsxwriter')
         for energy in energys2:
             if energy != "Nuclear":
-                df2 = df[df[data_yml["tecnology"]] == energy]
-                df2 = create_df(df2, energy)
-                df2 = df2.rename(columns={data_yml["date"]: "ds", data_yml["generation"]: "y"})
-                df2["ds"] = df2["ds"].dt.tz_localize(None)
-                df2.to_excel(writer,sheet_name=energy)
+                df2 = df[energy]
+                df2 = pd.DataFrame({"ds": df[data_yml["date"]], "y": df2})
+                print(df2["ds"])
+                df2["ds"] = pd.to_datetime(df2["ds"])
+                #df2.to_excel(writer,sheet_name=energy)
                 df_percentage = create_percentage_df(df2,energy,df_percentage)
         df3 = pd.read_csv("data/Datos_demanda.csv")
         df3 = df3.rename(columns={"fecha": "ds", "demanda": "y"})
@@ -87,7 +101,7 @@ def create_demand_percentage(df,writer):
     m.fit(df)
     future = m.make_future_dataframe(periods=365)
     forecast = m.predict(future)
-    c, a, b = Decomposition(m, "yearly", "Demand")  #
+    c, a, b,d= Decomposition(m, "Demand")  #
     df_percentage = {}
     #df_percentage["month"] = a
     #df_percentage["day"] = c

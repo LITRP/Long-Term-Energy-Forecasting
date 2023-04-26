@@ -3,15 +3,13 @@ scenario_description: Chile/Belgium # Description of the scenario
 #DATA FORMAT : DATE, GENERATION, TECNOLOGY
 
 # Archive with the data
-data: data/dataframe_chile_FIXED.csv # Path to the archive from the python main.py or just put the full path
+data: data/fixed_data.csv # Path to the archive from the python main.py or just put the full path
 
 freq: 'D' # Frequency of the data M=Month D=Day 1H= 1Hour 15m=15 minutes
 groupby: Day # Groupby to use in the data
 
 # Columns to use IN YOUR DATABASE PLEASE USE THE SAME NAME OF THE COLUMNS
 date: FECHA # Date of the data
-generation: TOTAL # Generation
-tecnology: TIPO # Tecnology
 zones: REGIÓN # Zones
 
 

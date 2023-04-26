@@ -181,7 +181,7 @@ def get_type(energy):
 def create_df(df,energy): #CREATE DF
     #print(df)
     df[data_yml["date"]] = pd.to_datetime(df[data_yml["date"]],utc=True)
-    df = df.groupby(by=[data_yml["date"]])[data_yml["generation"]].sum().reset_index()
+    df = df.groupby(by=[data_yml["date"]])[energy].sum().reset_index()
     return df
 
 
@@ -244,19 +244,34 @@ def Javier_Regression(full_df,df,percentage,energy,df_percentage,type): #JAVIER 
             listo_y[x:] = list(map(lambda y: puntos(pen, y, b), range(x, len(fechas))))
         lista = listo_y
     df2 = pd.DataFrame({"ds": fechas, "y": lista})
-    for x in range(0, 365):
-        df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] = \
-        df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] = \
-        df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] + (
-                    df2["y"][
-                        (df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] *
-                    names.loc[x][f"{energy}_per"] - names.loc[x][f"Demand_per"])
-    percentage_diff = diff_percentage(df2["y"].iloc[-1], data_yml["target_production"]*percentage)
-    if percentage != 0.0:
-        df2["y"] = df2["y"] + (df2["y"] * (percentage_diff / 100))
+    if "time" not in names.columns:
+        for x in range(0, 365):
+            df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] = \
+            df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] = \
+            df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] + (
+                        df2["y"][
+                            (df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"])] *
+                        names.loc[x][f"{energy}_per"] - names.loc[x][f"Demand_per"])
+        percentage_diff = diff_percentage(df2["y"].iloc[-1], data_yml["target_production"]*percentage)
+        if percentage != 0.0:
+            df2["y"] = df2["y"] + (df2["y"] * (percentage_diff / 100))
+        else:
+            df2["y"].iloc[-1] = 0
     else:
-        df2["y"].iloc[-1] = 0
-    #df2["y"] = df2["y"] +  (df2["y"] * (percentage_diff / 100))
+        for x in range(0, 365*24):
+            df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"]) & (
+                        df2["ds"].dt.hour == names.loc[x]["time"])] = \
+                df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"]) & (
+                            df2["ds"].dt.hour == names.loc[x]["time"])] + \
+                (df2["y"][(df2["ds"].dt.month == names.loc[x]["month"]) & (df2["ds"].dt.day == names.loc[x]["day"]) & (
+                            df2["ds"].dt.hour == names.loc[x]["time"])] *
+                 names.loc[x][f"{energy}_per"] - names.loc[x][f"Demand_per"])
+
+        percentage_diff = diff_percentage(df2["y"].iloc[-1], data_yml["target_production"]*percentage)
+        if percentage != 0.0:
+            df2["y"] = df2["y"] + (df2["y"] * (percentage_diff / 100))
+        else:
+            df2["y"].iloc[-1] = 0
     return df2,df_percentage
 
 
@@ -320,8 +335,6 @@ def main():
     warnings.simplefilter(action='ignore', category=FutureWarning) #IGNORE WARNINGS
     df = pd.read_csv(data_yml["data"], parse_dates=[data_yml["date"]]) #READ CSV
 
-    df[data_yml["generation"]] = df[data_yml["generation"]].astype(float) #CONVERT GENERATION TO FLOAT
-
 
     diccionario_renew = get_percentage_renew()
     total_dic = combine_dic(diccionario_renew, {})
@@ -342,15 +355,15 @@ def main():
                 result,nuclear_pivot = regression_nuclear(df, float(total_dic[renowable][0]),renowable)
                 total_dic[renowable] = result["y"]
             else:
-                df_renew = df[df[data_yml["tecnology"]] == renowable] # CONVERTIR EN FUNCION
-                df2 = create_df(df_renew,renowable)
-                df2 = df2[[data_yml["date"], data_yml["generation"]]]
+                df_renew = df[renowable] # CONVERTIR EN FUNCION
+                #df2 = create_df(df_renew,renowable)
+                df2 = pd.DataFrame({"ds": df[data_yml["date"]], "y": df_renew})
                 Serie = timeseries()
                 Serie.name = renowable
                 Serie.units = "MWh"
                 Serie.time_units = "Date"
-                Serie.data["y"] = df2[data_yml["generation"]]
-                Serie.data["ds"] = df2[data_yml["date"]]
+                Serie.data["y"] = df2["y"]
+                Serie.data["ds"] = df2["ds"]
                 result,percentages_df = Javier_Regression(df,Serie.convert_to_dataframe(), (float(total_dic[renowable][0])), renowable,percentage_df,get_type(renowable))
                 total_dic[renowable] = result["y"]
         df_demand = pd.read_csv("data/Datos_demanda.csv", parse_dates=["fecha"])
