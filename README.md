@@ -2,18 +2,18 @@
 LTEF: Long-Term Energy Forecasting
 
 ## Installation
-- Install python 3.10 or 3.9
-- Install requirements.txt with pip install -r requirements.txt
+- The code runs with Anaconda + Prophet # (pip install prophet)
+- Optionally:
+  - Install python 3.10 or 3.9
+  - Install requirements.txt with pip install -r requirements.txt
 
 ## Pattern Module
 
 - Run the program with python Pattern.py your_input.yml  #(i.e. Chile.yml)
-- Wait for the program to finish
-- See the results in the csv file called Percentage.csv}
+- Results are shown in a csv file called Percentage.csv
 
 
 ## Predictor Module
 
-- Run the program with python Predictor.py Chile.yml
-- Wait for the program to finish
-- See the results in the csv file called Forecast.csv
+- Run the program with python Predictor.py your_input.yml  #(i.e. Chile.yml)
+- Results are shown in a csv file called Forecast.csv
