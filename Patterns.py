@@ -31,7 +31,7 @@ def Decomposition(m,energy): #DECOMPOSITION OF SEASONALITY
     for name in m.seasonalities:
         print(name)
     period = m.seasonalities[name]['period']
-    print(period)
+    #print(period)
     end = start + pd.Timedelta(days=365)
     if name == 'yearly':
         plot_points = 365
@@ -54,11 +54,12 @@ def Decomposition(m,energy): #DECOMPOSITION OF SEASONALITY
 
 def create_percentage_df(df,energy,df_percentage): #CREATE PERCENTAGE DATAFRAME
     m = Prophet(seasonality_mode='multiplicative')
-    df["ds"] = df["ds"]
+    print(df["ds"])
+    df["ds"] = pd.to_datetime(df["ds"],utc=True).dt.tz_localize(None)
     m.fit(df)
     future = m.make_future_dataframe(periods=365*24)
     forecast = m.predict(future)
-    print(forecast)
+   # print(forecast)
     c, a, b,d = Decomposition(m, energy)  #
     df_percentage["month"] = a
     df_percentage["day"] = c
@@ -83,7 +84,7 @@ def fill_df_percentage(df,df_percentage):#FILL PERCENTAGE DATAFRAME
             if energy != "Nuclear":
                 df2 = df[energy]
                 df2 = pd.DataFrame({"ds": df[data_yml["date"]], "y": df2})
-                print(df2["ds"])
+               # print(df2["ds"])
                 df2["ds"] = pd.to_datetime(df2["ds"])
                 #df2.to_excel(writer,sheet_name=energy)
                 df_percentage = create_percentage_df(df2,energy,df_percentage)
@@ -93,7 +94,7 @@ def fill_df_percentage(df,df_percentage):#FILL PERCENTAGE DATAFRAME
         if not os.path.exists("output"):
             os.mkdir("output")
         writer.save()
-        df_percentage.to_csv("output/Percentages.csv", index=False)
+        df_percentage.to_csv("output/Pattern.csv", index=False)
 
 def create_demand_percentage(df,writer):
    # df["ds"] = df["ds"].dt.tz_localize(None)

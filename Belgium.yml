@@ -22,28 +22,55 @@ target_production: 15000 # Target production for total energy for prophet and lo
 
 plot: False # Plot the results
 
-to_predict: # Energy to predict
-    - Total # Total energy to predict (sum of all energy) NECESSARY
-#REMEMBER TO USE THE SAME NAME OF THE ENERGY IN THE DATABASE VERY IMPORTANT!!!!!!!!!!!!!!!
-#nuclear: 7500 # Nuclear energy needed , va a ser un porcentaje de la energia total pero por ahora lo dejo como un numero fijo
 
 energy: # Energies to predict
   Predict: # PUT HERE THE NAME OF THE ENERGY YOU WANT TO PREDICT
-    - WA:
-      - 0.1 # PERCENTAGE OF THE ENERGY TO PREDICT
-      - linear
+    - CP :
+      - 0.4 # PERCENTAGE OF THE ENERGY TO PREDICT
+      - custom
+      - data:
+          - 2030-02-01
+          - 2040-02-02
+          - 2045-02-01
+      - values:
+          - 3000
+          - 1000
+          - -3000
     - WI :
-      - 0.15
-      - linear # NAME OF THE ENERGY : PERCENTAGE
-    - CP:
-      - 0.15
-      - linear # NAME OF THE ENERGY : PERCENTAGE
+      - 0.3
+      - otro # NAME OF THE ENERGY : PERCENTAGE
+      - data:
+          - 2030-02-01
+          - 2040-02-02
+      - values:
+          - 1000
+          - 2000
     - LF:
-      - 0.1
-      - linear # NAME OF THE ENERGY : PERCENTAGE
-    - Other:
-      - 0.1
-      - linear # NAME OF THE ENERGY : PERCENTAGE
-    - Nuclear:
-      - 0.4
-      - linear # NAME OF THE ENERGY : PERCENTAGE
+        - 0.1
+        - otro # NAME OF THE ENERGY : PERCENTAGE
+        - data:
+            - 2030-02-01
+            - 2040-02-02
+        - values:
+            - 10000
+            - 20000
+    - WA:
+        - 0.0
+        - linear # NAME OF THE ENERGY : PERCENTAGE
+    - NU:
+      - 0.2
+      - custom
+      - data:
+          - 2023-02-01
+          - 2025-02-02
+          - 2030-02-01
+          - 2034-02-02
+          - 2040-02-01
+          - 2045-02-02
+      - values:
+          - 10000
+          - 20000
+          - 30000
+          - -10000
+          - -20000
+          - 50000
