@@ -16,7 +16,9 @@ The process is as follow:
 
 2) Energy forecasting model
 
-This module creates long term forecast for each energy source thanks to the pattern model: The process is as follow:
+This module creates long term forecast for each energy source thanks to the pattern model. 
+
+The process is as follow:
 
 - Reads original and previously formatted data to generate a data line between the database and a target value (defined in input file)
 - Uses pattern file from patterns module to adjust the data line to values with seasonal trends and their inputs/outputs defined by the user.
