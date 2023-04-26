@@ -7,7 +7,7 @@ LTEF: Long-Term Energy Forecasting
 
 ## Pattern Module
 
-- Run the program with python Pattern.py Chile.yml
+- Run the program with python Pattern.py your_input.yml  #(i.e. Chile.yml)
 - Wait for the program to finish
 - See the results in the csv file called Percentage.csv}
 
