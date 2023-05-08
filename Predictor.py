@@ -203,7 +203,7 @@ def Javier_Regression(full_df,df,percentage,energy,df_percentage,type): #JAVIER 
         print("Cerrando programa")
         exit()
     else:
-        names = pd.read_csv(f"output/Percentages.csv")
+        names = pd.read_csv(f"output/{data_yml['pattern']}")
     if type =="Demand":
         fechas = pd.date_range(start=full_df["ds"].max().replace(tzinfo=None), end=data_yml["objetive_date"], freq=data_yml["freq"])
         pen, b = math_.ecuación_de_la_recta(len(full_df), df["y"][df["ds"] == full_df["ds"].max().replace(tzinfo=None)].iloc[0], len(df) + len(fechas),

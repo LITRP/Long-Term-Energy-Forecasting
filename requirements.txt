@@ -1,34 +1,3 @@
-absl-py==1.3.0
-aiohttp==3.8.3
-aiosignal==1.3.1
-asttokens==2.2.1
-async-timeout==4.0.2
-attrs==22.2.0
-backcall==0.2.0
-Bottleneck @ file:///C:/Windows/Temp/abs_3198ca53-903d-42fd-87b4-03e6d03a8381yfwsuve8/croots/recipe/bottleneck_1657175565403/work
-cachetools==5.2.1
-captum==0.6.0
-certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
-charset-normalizer==2.1.1
-cmdstanpy==1.0.8
-colorama==0.4.6
-comm==0.1.2
-commonmark==0.9.1
-contourpy @ file:///C:/b/abs_d5rpy288vc/croots/recipe/contourpy_1663827418189/work
-convertdate==2.4.0
-cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
-Cython==0.29.32
-debugpy==1.6.5
-decorator==5.1.1
-entrypoints==0.4
-ephem==4.1.4
-executing==1.2.0
-fonttools==4.25.0
-frozenlist==1.3.3
-fsspec==2022.11.0
-google-auth==2.16.0
-google-auth-oauthlib==0.4.6
-grpcio==1.51.1
 hijri-converter==2.2.4
 holidays==0.18
 idna==3.4
@@ -39,73 +8,18 @@ jedi==0.18.2
 jupyter_client==7.4.8
 jupyter_core==5.1.3
 jupyterlab-widgets==3.0.5
-kiwisolver @ file:///C:/b/abs_88mdhvtahm/croot/kiwisolver_1672387921783/work
-korean-lunar-calendar==0.3.1
-LunarCalendar==0.0.9
-Markdown==3.4.1
-MarkupSafe==2.1.1
 matplotlib @ file:///C:/b/abs_03z_dj2gty/croot/matplotlib-suite_1670466145509/work
 matplotlib-inline @ file:///C:/ci/matplotlib-inline_1661934094726/work
-mkl-fft==1.3.1
-mkl-random @ file:///C:/ci_310/mkl_random_1643050563308/work
-mkl-service==2.4.0
-multidict==6.0.4
-munkres==1.1.4
-nest-asyncio==1.5.6
-neuralprophet==0.5.0
-numexpr @ file:///C:/b/abs_a7kbak88hk/croot/numexpr_1668713882979/work
 numpy @ file:///C:/b/abs_datssh7cer/croot/numpy_and_numpy_base_1672336199388/work
-oauthlib==3.2.2
-packaging @ file:///C:/b/abs_cfsup8ur87/croot/packaging_1671697442297/work
-pandas @ file:///C:/b/abs_c6fuezktfm/croot/pandas_1670425103552/work
-parso==0.8.3
-pickleshare==0.7.5
-Pillow==9.3.0
-platformdirs==2.6.2
 plotly==5.11.0
-ply==3.11
-prompt-toolkit==3.0.36
 prophet==1.1.1
-protobuf==3.20.3
-psutil==5.9.4
-pure-eval==0.2.2
-pyasn1==0.4.8
-pyasn1-modules==0.2.8
-pyDeprecate==0.3.2
-Pygments==2.14.0
-PyMeeus==0.5.12
-pyparsing @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_7f_7lba6rl/croots/recipe/pyparsing_1661452540662/work
-PyQt5==5.15.7
-PyQt5-sip @ file:///C:/Windows/Temp/abs_d7gmd2jg8i/croots/recipe/pyqt-split_1659273064801/work/pyqt_sip
-python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
 pytorch-lightning==1.7.4
-pytz @ file:///C:/b/abs_22fofvpn1x/croot/pytz_1671698059864/work
-pywin32==305
 PyYAML @ file:///C:/b/abs_d0g7dqt2xw/croot/pyyaml_1670514768165/work
-pyzmq==24.0.1
-requests==2.28.1
-requests-oauthlib==1.3.1
-rich==12.4.4
-rsa==4.9
-setuptools-git==1.2
-sip @ file:///C:/Windows/Temp/abs_b8fxd17m2u/croots/recipe/sip_1659012372737/work
-six @ file:///tmp/build/80754af9/six_1644875935023/work
-stack-data==0.6.2
 tenacity==8.1.0
 tensorboard==2.11.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-toml @ file:///tmp/build/80754af9/toml_1616166611790/work
 torch==1.13.1
 torchmetrics==0.9.3
-tornado @ file:///C:/ci/tornado_1662476985533/work
-tqdm==4.64.1
-traitlets @ file:///C:/b/abs_e5m_xjjl94/croot/traitlets_1671143896266/work
-typing_extensions==4.4.0
-urllib3==1.26.14
-wcwidth==0.2.5
-Werkzeug==2.2.2
-widgetsnbextension==4.0.5
-wincertstore==0.2
 XlsxWriter==3.0.6
 yarl==1.8.2

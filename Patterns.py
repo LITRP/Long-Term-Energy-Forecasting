@@ -27,19 +27,22 @@ def Decomposition(m,energy): #DECOMPOSITION OF SEASONALITY
     # name = name of the seasonality component you want (yearly,monthly,etc...)
     # m = the model object
     # will return three arrays: days, months, and the seasonality component
-    start = pd.to_datetime('2022-01-01 0000')
-    for name in m.seasonalities:
-        print(name)
-    period = m.seasonalities[name]['period']
-    #print(period)
-    end = start + pd.Timedelta(days=365)
+    start = pd.to_datetime('2019-01-01 0000')
+    name = next(iter(m.seasonalities))
+    print(name)
     if name == 'yearly':
-        plot_points = 365
+        plot_points = 366
+        period = m.seasonalities[name]['period']
+        end = start + pd.Timedelta(days=period)
     elif name == 'daily':
         plot_points = 365 * 24
-    else:
-        plot_points = 365
-    days = pd.to_datetime(np.linspace(start.value, end.value, plot_points))
+        period = m.seasonalities[name]['period']
+        end = start + pd.Timedelta(days=period)
+    elif name == 'weekly':
+        period = m.seasonalities[name]['period']
+        end = start + pd.Timedelta(days=period)
+        plot_points = 366
+    days = pd.to_datetime(np.linspace(start.value, end.value, 366))
     df_y = seasonality_plot_df(m, days)
     seas = m.predict_seasonal_components(df_y)
     save_dict = {}
@@ -54,11 +57,11 @@ def Decomposition(m,energy): #DECOMPOSITION OF SEASONALITY
 
 def create_percentage_df(df,energy,df_percentage): #CREATE PERCENTAGE DATAFRAME
     m = Prophet(seasonality_mode='multiplicative')
-    print(df["ds"])
     df["ds"] = pd.to_datetime(df["ds"],utc=True).dt.tz_localize(None)
     m.fit(df)
-    future = m.make_future_dataframe(periods=365*24)
+    future = m.make_future_dataframe(periods=365)
     forecast = m.predict(future)
+    print(forecast)
    # print(forecast)
     c, a, b,d = Decomposition(m, energy)  #
     df_percentage["month"] = a
@@ -84,9 +87,13 @@ def fill_df_percentage(df,df_percentage):#FILL PERCENTAGE DATAFRAME
             if energy != "Nuclear":
                 df2 = df[energy]
                 df2 = pd.DataFrame({"ds": df[data_yml["date"]], "y": df2})
+                print(df2["y"])
                # print(df2["ds"])
-                df2["ds"] = pd.to_datetime(df2["ds"])
-                #df2.to_excel(writer,sheet_name=energy)
+                try:
+                    df2["ds"] = pd.to_datetime(df2["ds"],utc=True).dt.tz_localize(None)
+                except:
+                    df2["ds"] = pd.to_datetime(df2["ds"])
+                df2.to_excel(writer,sheet_name=energy)
                 df_percentage = create_percentage_df(df2,energy,df_percentage)
         df3 = pd.read_csv("data/Datos_demanda.csv")
         df3 = df3.rename(columns={"fecha": "ds", "demanda": "y"})
